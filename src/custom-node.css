@@ -1,0 +1,47 @@
+.custom-node {
+    border: 1px solid #eee;
+    padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    background: white;
+    min-width: 172px;
+  }
+
+  .custom-node.source {
+    background-color: lightblue;
+  }
+
+  .custom-node.model {
+    background-color: lightgrey;
+  }
+
+  .custom-node.exposure {
+    background-color: white;
+  }
+
+  .inside-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .badges {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+  }
+
+  .badge {
+    padding: 3px;
+    border-radius: 30px;
+    margin-right: 2px;
+  }
+
+  .badges .passed {
+    background-color: green;
+  }
+
+  .badges .failed, .badges .warning {
+    background-color: pink;
+  }
