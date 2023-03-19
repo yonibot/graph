@@ -1,11 +1,13 @@
 .custom-node {
-    border: 1px solid #eee;
+    border: 1px solid purple;
     padding: 2px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 5px;
     background: white;
     min-width: 172px;
+    font-family: Sans-Serif;
+    font-size: 12px;
   }
 
   .custom-node.source {
@@ -25,6 +27,10 @@
     flex-direction: row;
   }
 
+  .inside-content.bold {
+    font-weight: bold;
+  }
+
   .badges {
     width: 100%;
     display: flex;
@@ -36,6 +42,12 @@
     padding: 3px;
     border-radius: 30px;
     margin-right: 2px;
+    color: lightgreen;
+  }
+
+  .react-flow__handle {
+    border: 1px solid purple;
+    background-color: #eee;
   }
 
   .badges .passed {

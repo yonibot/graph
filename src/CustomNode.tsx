@@ -8,11 +8,12 @@ const Badge = ({ children, className }) => {
 }
 
 function CustomNode({ data, isConnectable }) {
+  console.log({ data })
   return (
     <div className={`custom-node ${data.type}`}>
       {data.type !== 'source' && <Handle type="target" position={Position.Left} isConnectable={isConnectable} />}
       {data.type !== 'exposure' && <Handle type="source" position={Position.Right} isConnectable={isConnectable} />}
-      <div className="inside-content">
+      <div className={`inside-content ${data.emphasized === true ? 'bold' : ''}`}>
         {data.label}
         <div className="badges">
           {data.tests.passed > 0 && <Badge className='passed'>{data.tests.passed}</Badge>}
